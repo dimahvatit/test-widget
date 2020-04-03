@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Виджет-тест</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="widget">
+		<button class="close"></button>
+		<div class="widget__header">
+			<p class="header__text">Ваш заказ №<span>1890998</span> принят<br>и находится в обработке</p>
+		</div>
+
+
+		<div class="widget__body">
+			<h2 class="customer__name">Михаил Иванович!</h2>
+			<div class="body__discount">10%</div>
+			<p class="body__text">
+				подарите друзьям скидку в «CompanyName»
+				и получите скидку в подарок, за каждого друга
+			</p>
+			<div class="social">
+
+				<div class="soical__item" id="OK">
+					<a href="#"><img src="images/smm/OK.png" alt="ok"></a>
+				</div>
+
+				<div class="soical__item" id="FB">
+					<a href="#"><img src="images/smm/FB.png" alt="fb"></a>
+				</div>
+
+				<div class="soical__item" id="TW">
+					<a href="#"><img src="images/smm/TW.png" alt="tw"></a>
+				</div>
+
+				<div class="soical__item" id="VK">
+					<span class="VK__logo">В</span>
+				</div>
+
+			</div>
+
+
+			<form action="handler.php" class="form">
+
+				<input class="email" type="email" placeholder="E-mail друзей">
+
+				<textarea class="feedback" type="text" maxlength="400">Хороший ассортимент и цены в 	%site_name%. Только что после покупки  подарили скидку %friend_reward% для моих друзей!
+
+Времени мало, Вперёд! 
+				</textarea>
+
+				<input class="submit" type="submit" value="Отправить">
+
+			</form>
+
+		</div>	<!--/.widget__body-->
+
+
+		<div class="widget__footer">
+			<input class="user__link" type="text" value="http://floctoryblablabla/###########">
+			<p class="footer__text">Правила акции <button class="expand">></button></p>
+			<a class="footer__link" href="#">Пользовательское соглашение</a>
+		</div>
+
+	</div>	<!--/.widget-->
+
+</body></html>
